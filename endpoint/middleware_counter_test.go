@@ -5,12 +5,10 @@ import (
 	"io"
 	"testing"
 
-	"github.com/prometheus/client_golang/prometheus/testutil"
-
 	"github.com/go-kit/kit/endpoint"
-
 	kitprom "github.com/go-kit/kit/metrics/prometheus"
 	stdprom "github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/testutil"
 )
 
 func noOpLabelsFunc() LabelsFunc {
